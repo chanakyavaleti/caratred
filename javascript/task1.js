@@ -17,3 +17,5 @@
         document.getElementById("on").style.backgroundColor="blue";
         document.getElementById("butt").textContent = "Switched Off";
     }
+
+

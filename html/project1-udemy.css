@@ -1,0 +1,57 @@
+body{
+    font-family: Cormorant,serif;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+ul , h1 {
+    display: inline-block;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 20px;
+ }
+
+li [href $="#work"]{
+    border-bottom: 1px solid black;
+}
+nav{
+    margin: 30px;
+    font-size: large;
+}
+
+h2{
+    display: inline-block;
+    margin: 8px 16px 0 0;
+    font-weight: 300;
+}
+.image-card{
+    width: 49.75%;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+#about{
+    width: 300px;
+    font-weight: 300;
+    margin: 100px;
+}
+.content{
+    text-decoration: underline;
+}
+#contact{
+    margin-top: 50px;
+}
+img:hover{
+    opacity: 0.5;
+}

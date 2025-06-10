@@ -1,0 +1,38 @@
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100vw;
+  height:100vh;
+}
+.circle{
+  background: conic-gradient(red,blue,rgb(5, 249, 5),orange);
+  height:300px;
+  width:300px;
+  border-radius:50%;
+  position: relative;
+  animation: round 1.5s infinite linear;
+  border: 3px solid black;
+}
+.circle::after{
+    content: "";
+    background-color: white;
+   background-color: white;
+   /* box-shadow: inner black; */
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid rgb(16, 15, 15);
+}
+@keyframes round{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

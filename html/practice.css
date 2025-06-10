@@ -1,0 +1,28 @@
+.main{
+    /* padding: 40%; */
+    background-color: aqua;
+    height: 200px;
+    padding: 40px;
+    position: relative;
+     
+}
+.container{
+     background-color: red;
+     height: 200px;
+    /* position: relative; */
+    
+     
+}
+.dot{
+     background-color: black;
+     width: 20px;
+     height: 20px;
+      position: absolute;
+      /* top: 0px; */
+      bottom: 0px;
+
+    }
+
+
+
+
