@@ -3,7 +3,7 @@ const cartcontainer=document.getElementById("mycart");
 const feedback=document.getElementById("feedback");
 const amount=document.getElementById("amount");
 
-//data 
+//data from the server
 const products=[
    {
     id: 1,
@@ -59,7 +59,7 @@ const products=[
 ];
 
 //cart container
-const cart=[];
+let cart=[];
 
 //getting data from the server and inserting in web site
 products.forEach(function(data){
@@ -71,6 +71,7 @@ products.forEach(function(data){
             // console.log(data.name);
 
             productcontainer.insertAdjacentHTML("beforeend",productdata);
+            // console.log(this)
 });
 
 
@@ -98,7 +99,7 @@ function addingcart(id){
             
 };
 
-//adding in cart 
+//adding in cart by the user
 function addingdata(){
     cartcontainer.innerHTML="";
     cart.find(function(products){
@@ -110,6 +111,7 @@ function addingdata(){
             // console.log(data.name);
 feedbackpop(`${products.name} is succesfully added to cart`,"correct");
             cartcontainer.insertAdjacentHTML("beforeend",productdata); 
+
     });
 
 //adding the price
@@ -119,6 +121,7 @@ feedbackpop(`${products.name} is succesfully added to cart`,"correct");
     amount.textContent=`Rs.${price}`;
 };
 
+//removing cart by the user 1 by one
 function removingcart(id){
     const removee= cart.findIndex((products)=> id=== products.id);
     console.log(removee);
@@ -150,12 +153,23 @@ function  feedbackpop(msg,color){
 };
 
 
-
+//all the data will clear in my cart with this function
 function clearr(){
     cart.length=0;
     addingdata();
 };
+
+//sort in assecending order with this fubction
 function sort(){
-    cart.sort(function(student1,student2){ return student1.price - student2.price;});
+    for (let i = 0; i < cart.length; i++) {
+  for (let j = 0; j < cart.length -1 ; j++) {
+    if (cart[j].price > cart[j + 1].price) {
+     //swapping
+      let temp = cart[j];
+      cart[j] = cart[j + 1];
+      cart[j + 1] = temp;
+    }
+  }
+}
     addingdata();
 };
