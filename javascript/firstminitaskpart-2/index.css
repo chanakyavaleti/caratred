@@ -1,0 +1,238 @@
+.container{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* nav bar 1 */
+.nav1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+
+}
+.logo img {
+    width: 150px;
+}
+
+
+/* nav 1 bar middle  */
+.middle{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.sub-middle{
+    display: flex;
+    align-items: center;
+    
+}
+.sub-middle img{
+    width: 40px;
+    height: 50px;
+    border-radius: 80px;
+}
+
+
+/* nav 1 bar right  */
+
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.right img{
+    width: 50px;
+    height: 40px;
+    margin: 0 10px 0 20px;
+}
+
+
+/* container2  */
+
+.container2{
+    margin-top: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container2-1{
+    /* background-color: aqua; */
+    width: 80%;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading span span{
+    margin-right: 20px;
+}
+
+.heading span span:hover{
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.heading span span svg{
+    margin-right: 5px;
+}
+.heading span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* images   */
+.images-top img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.images-top{
+    display: grid;
+    grid-template-areas: 
+    "hyderabad1 hyderabad1 hyderabad2 hyderabad4"
+    "hyderabad1 hyderabad1 hyderabad3 hyderabad5"
+     ;
+     grid-gap: 20px;
+     
+}
+
+#hyderabad1{
+    grid-area: hyderabad1;
+}
+
+#hyderabad2{
+    grid-area: hyderabad2;
+}
+
+#hyderabad3{
+    grid-area: hyderabad3;
+}
+
+#hyderabad4{
+    grid-area: hyderabad4;
+}
+
+#hyderabad5{
+    grid-area: hyderabad5;
+}
+
+/* container3 */
+
+.container3{
+    display: flex;
+}
+.left{
+    box-sizing: border-box;
+    width: 45%;
+}
+
+.left > h2 {
+    padding: 0px;
+    margin: 10px;
+}
+
+.left > h2 + span {
+    padding: 0px;
+    margin: 10px;
+}
+
+.guestfavourite{
+    border: 3px solid rgb(212, 208, 208);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+.guestfavourite h2,h3{
+    margin: 0;
+}
+
+.guestfavourite > img{
+    width: 200px;
+}
+
+.rating img{
+    width: 80px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews{
+    border-left: 2px solid rgb(199, 195, 195);
+    padding-left:20px ;
+}
+
+
+/* customers  top */
+
+.customers .top-customers{
+    display: flex;
+    align-items: center;
+}
+
+.top-image-customers img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.top-customers-data h2,h3{
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    font-weight: 200;
+}
+
+/* customers  middle */
+.middle-customers h2,.middle-customers h3{
+    margin: 0;
+    font-weight: 100;
+    font-size: large;
+}
+
+.middle-customers .first,.second,.third{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+}
+.middle-customers span{
+    margin-left: 30px;
+}
+
+.middle-customers span svg{
+    height: 25px;
+}
+
+
+.right{
+    box-sizing: border-box;
+    width: 45%;
+
+}
+.right img{
+    width: 100%;
+}

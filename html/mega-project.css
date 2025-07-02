@@ -408,9 +408,10 @@ p {
 .graphic-grid{ 
   display: grid;
   grid-template-areas: 
-      "credit-card slack-invoice slack-invoice"
-      "phone slack-invoice slack-invoice"
-      "phone dash dash";
+      "credit-card credit-card slack-invoice"
+      "dash dash slack-invoice"
+      "phone phone phone"
+      ;
       grid-gap: var(--spacing-lg);
 }
 

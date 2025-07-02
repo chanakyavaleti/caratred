@@ -1,0 +1,441 @@
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    font-family: Airbnb Cereal VF, Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    color: #222222;
+}
+.container , .container2 , footer{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* nav bar 1 */
+.nav1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+
+}
+.logo img {
+    width: 150px;
+}
+
+
+/* nav 1 bar middle  */
+.middle{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.sub-middle{
+    display: flex;
+    align-items: center;
+    
+}
+.sub-middle img{
+    width: 40px;
+    height: 50px;
+    border-radius: 80px;
+}
+
+/* nav 1 bar right  */
+
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.right img{
+    width: 50px;
+    height: 40px;
+    margin: 0 10px 0 20px;
+}
+
+/* nav2  */
+.nav2-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.nav2{
+    /* background-color: antiquewhite; */
+    border-radius: 60px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 8px 5px 8px 2px rgb(170, 172, 173);
+}
+
+.nav2 .left{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav2 .left span p,h5{
+    margin: 0;
+    margin-left: 5px;
+}
+.left span{
+    padding: 10px 0 10px 10px;
+    width: 25%;
+}
+.nav2 .border{
+    border-left: 2px;
+    border-color: rgb(159, 158, 158);
+    border-left-style: solid;
+}
+
+.nav2 .right img{
+    border-radius: 50%;
+}
+
+
+.nav2 .hover:hover{
+    background-color: rgb(197, 198, 199);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    margin: 0px;
+}
+
+input{
+    border: 0;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+input:hover{
+    border: 0px;
+    background-color:rgba(0, 0, 255, 0) ;
+}
+
+/* container 2 */
+.container2{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hyderabad , .bengalur ,
+.goa ,.pune , .puducherry ,
+ .visakhapatnam , .rangareddy,.chittoor{
+    box-sizing: border-box;
+    max-width: 95%;
+}
+
+#hyderabad-hotels ,#bengalur-hotels ,
+#goa-hotels , #pune-hotels , 
+#chittoor-hotels , #puducherry-hotels ,
+ #visakhapatnam-hotels , #rangareddy-hotels{ 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 1354px;
+}
+
+.hotels h6,h5{
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.hotels h6{
+    color: #6a6a6ad9;
+    font-size: 11px;
+    font-weight: 550;
+}
+
+.hotels{
+    box-sizing: border-box;
+    margin-right: 20px;
+    position: relative;
+    border-radius: 20px;
+}
+.hotels img{
+    box-sizing: border-box;
+    box-shadow: 1px 1px 10px 5px rgba(170, 172, 173, 0.316);
+    border-radius: 20px;
+    width: 180px;
+    height: 200px;
+    
+}
+
+
+.header h2{
+    font-size: 18px;
+}
+
+.heartcolor{
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    height: 20px;
+    
+}
+
+.popup h5{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    background-color: rgba(255, 255, 255, 0.907);
+    margin: 0;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+
+/* footer  */
+
+footer{
+    background-color: rgba(238, 236, 236, 0.897);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+footer .top{
+    width: 90%;
+}
+
+footer .top h2{
+    font-size: 22px;
+    color: #222222;
+}
+.top ul li{
+    list-style-type: none;
+}
+
+.top ul li h3,h4{
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    font-size: 14px;
+    color: #222222;
+}
+.top ul li h4{
+    margin-bottom: 20px;
+    color: #6a6a6a;
+}
+
+.un-order{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .middle{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.middle h5{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 50;
+}
+
+.middle h3{
+    font-size: 14px;
+}
+
+
+.last{
+    width: 90%;
+    display: flex;
+    border: 3px  rgb(211, 205, 205);
+    border-top-style: solid;
+}
+
+.last .left ,.right , .left ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.left ul li, .right span{
+    margin-left: 20px;
+}
+.last {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media only screen and (max-width: 1090px) {
+    #hyderabad-hotels ,#bengalur-hotels ,
+#goa-hotels , #pune-hotels , 
+#chittoor-hotels , #puducherry-hotels ,
+ #visakhapatnam-hotels , #rangareddy-hotels{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+    }
+    .nav2{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 895px) {
+    #hyderabad-hotels ,#bengalur-hotels ,
+#goa-hotels , #pune-hotels , 
+#chittoor-hotels , #puducherry-hotels ,
+ #visakhapatnam-hotels , #rangareddy-hotels{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .hotels{
+        margin: 10px 5px;
+    }
+
+    .hotels img{
+        width: 100%;
+    }
+
+    footer{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .container{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    
+    .nav2{
+        box-sizing: border-box;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .left  .hover{
+    margin: 10px;
+}
+    .nav2 .left{
+        width: 80%;
+
+    }
+    .nav2 .right{
+        width: 10%;
+    }
+
+    .left span{
+        margin: 0;
+    }
+}
+
+
+@media only screen and (max-width: 730px) {
+    #hyderabad-hotels ,#bengalur-hotels ,
+#goa-hotels , #pune-hotels , 
+#chittoor-hotels , #puducherry-hotels ,
+ #visakhapatnam-hotels , #rangareddy-hotels{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        
+    }
+
+    .hotels{
+        margin: 15px 20px;
+        width: 95%;
+    }
+
+    .hotels img{
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hotels h5{
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    font-size: medium;
+}
+.hotels h6{
+    font-size: small;
+}
+
+
+.nav2{
+    display: none;
+}
+
+
+.nav1 .right{
+    display: none;
+}
+.nav1{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+.nav1 .middle{
+    width: 50%;
+}
+
+.container2{
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.nav2 .left span p,h5{
+    margin: 0;
+    padding: 2px;
+    margin-left: 5px;
+    font-size: small;
+}
+
+.container{
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+}
+
+footer .last{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+
+@media only screen and (max-width: 690px) {
+.container{
+    width: 690px;
+}
+}
