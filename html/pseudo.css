@@ -1,0 +1,17 @@
+.active:active , .checked:checked{
+    background-color: rgb(255, 153, 127);
+    color: red;
+}
+
+.any-link:any-link{
+    font-size: xx-large;
+}
+
+.auto:autofill{
+    color: aqua;
+    font-size: large;
+}
+
+.disable:disabled{
+    background-color: aquamarine;
+}

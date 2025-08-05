@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordion</title>
+</head>
+
+<body>
+    
+    <div class="accordion" id="aparent">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#firstlabel">1st bar</button>
+            </h2>
+            <div id="firstlabel" class="collapse accordion-collapse "  data-bs-parent="#aparent">
+                <div class="accordion-body ">
+                    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis esse ea harum dolorem
+                        quibusdam asperiores eius illo temporibus, delectus provident consectetur, est dolorum et ex
+                        iure. Sed tempore voluptatum repellendus!</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#secondlable">2nd bar</button>
+            </h2>
+            <div id="secondlable" class="collapse accordion-collapse  "  data-bs-parent="#aparent">
+                <div class="accordion-body ">
+                    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis esse ea harum dolorem
+                        quibusdam asperiores eius illo temporibus, delectus provident consectetur, est dolorum et ex
+                        iure. Sed tempore voluptatum repellendus!</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#thirdlabel">3rd bar</button>
+            </h2>
+            <div id="thirdlabel" class="collapse accordion-collapse "  data-bs-parent="#aparent">
+                <div class="accordion-body ">
+                    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis esse ea harum dolorem
+                        quibusdam asperiores eius illo temporibus, delectus provident consectetur, est dolorum et ex
+                        iure. Sed tempore voluptatum repellendus!</h1>
+                </div>̥
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
