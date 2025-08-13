@@ -2,6 +2,6 @@
 let languages = ["JavaScript", "Java", "C"];
 
 let check = languages.includes("Java");
-let check1 = languages.includes("J");
+let check1 = languages.includes("C");
 console.log(check1); 
 console.log(check); 

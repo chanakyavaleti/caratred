@@ -6,3 +6,5 @@ let b=a.reduce( function(pre,sum){
     return pre+sum
 })
 console.log(b)
+let c=a.reduce((a,b)=> a+b)
+console.log(c)

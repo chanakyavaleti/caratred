@@ -8,3 +8,11 @@
 // let c = a.concat(b);
 // console.log("concated data array",c);
 // console.log("original array",a);
+// let d="hjggjh";
+// let g='llklkk'
+ let z= "hbhbh,hjhjjgj,jhgjh";
+
+  let b=z.split(",").join("");
+  console.log(b);
+  
+
